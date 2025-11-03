@@ -17,4 +17,5 @@ func main() {
 	}
 	command = strings.TrimRight(command, "\r\n")
 	fmt.Printf("%s: command not found",command)
+	
 }
