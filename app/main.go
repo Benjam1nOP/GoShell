@@ -16,5 +16,5 @@ func main() {
 		os.Exit(1)
 	}
 	command = strings.TrimRight(command, "\r\n")
-	fmt.Printf("%s : command not found ",command)
+	fmt.Printf("%s : command not found",command)
 }
