@@ -23,9 +23,10 @@ func main() {
 			fmt.Printf("-Error Reading the input")
 			os.Exit(1)
 		}
+		//fmt.Printf("%d",len(command))	check what is getting stored after input and it is text with \r\n
 
-		command = strings.TrimRight(command, "\r\n")
-		
-		fmt.Printf("%s: command not found\n",command)
+		//command = strings.TrimRight(command, "\r\n")
+
+		fmt.Printf("%s: command not found\n", strings.TrimSpace(command))
 	}
 }
