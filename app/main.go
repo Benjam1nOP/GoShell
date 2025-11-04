@@ -26,12 +26,13 @@ func main() {
 		//fmt.Printf("%d",len(command))	check what is getting stored after input and it is text with \r\n
 
 		//command = strings.TrimRight(command, "\r\n")
-		if command == "exit 1\n" {
+		command = strings.TrimSpace(command)  // In linux env \n is sent after text in windows \r\n is sent
+		if command == "exit 1" {
 			os.Exit(1)
 		}
-		if command == "exit 0\n" {
+		if command == "exit 0" {
 			os.Exit(0)
 		}
-		fmt.Printf("%s: command not found\n", strings.TrimSpace(command))
+		fmt.Printf("%s: command not found\n", command)
 	}
 }
